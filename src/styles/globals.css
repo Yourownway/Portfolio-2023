@@ -394,7 +394,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  
   padding: 0 0 50px 0;
   position: relative;
 }
@@ -405,8 +404,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
-.skill h5 {
-
+.skill h2 {
+	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
@@ -559,7 +558,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Contactcd  Css ************/
+/************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;

@@ -52,11 +52,6 @@ export default function Skills() {
                                     <h5>Brand identity</h5>
 
                                 </div>
-                                <div className='item'><Image src={""} />
-                                    <h5></h5>
-
-                                </div>
-
                             </Carousel>
                         </div>
                     </Col>
