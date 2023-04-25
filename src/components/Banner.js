@@ -1,10 +1,23 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
-import headerImage from "../assets/img/header-img.svg"
+import headerImage from "../assets/img/header-img.png"
+import pdfLogo from "../assets/img/pdf-logo.svg"
 export default function Banner() {
-
+    const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('CVdev.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CVdev.pdf';
+                alink.click();
+            })
+        })
+    }
     const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"]
     const [loopNumb, setloopNumb] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
@@ -53,10 +66,10 @@ export default function Banner() {
                     <span className='tagline'>Welcome to my Portfolio</span>
                     <h1 className='txt-rotate'>{`Hi I'm Lorris `}<span className='wrap'>{text}</span></h1>
                     <p>Lorem ipsum is symply </p>
-                    <button onClick={()=>console.log("connect")}>Let's connect <ArrowRightCircle size={25}/></button>
+                    <button onClick={onButtonClick}>Get my Resume <Image className='pdf-logo'  src={pdfLogo}/> </button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
-                    <Image src={headerImage} alt="Header image"/>
+                    <Image className='header-img' src={headerImage} alt="Header image"/>
                 </Col>
             </Row>
         </Container>

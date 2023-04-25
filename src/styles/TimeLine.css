@@ -1,0 +1,50 @@
+
+
+
+.timeline-split{
+    background-color: white;
+    width: 4px;
+    height: 72px;
+    transform: translateX(-50%);
+}
+
+.timeline-tab{
+    width: 100%;
+    background: linear-gradient(90.21deg, #73205D -5.91%, #731D6D 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px; 
+    color: #fff !important;
+    margin: 0 0 8px 0;
+    padding: 18px 26px !important;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+   
+}
+.timeline-tab a {
+    color: white;
+}
+
+.timeline-tab[aria-selected="true"]  {
+
+    background: linear-gradient(174deg, rgba(115,32,93,1) 29%, rgba(166,65,80,1) 83%, rgba(242,113,64,0.8) 100%);    transition: 0.3s ease-in-out;  
+    background: #D96055;
+}
+.timeline-content{
+    height: 100%;
+
+    display: flex;
+}
+.timeline-content .active{
+width: 100%;
+align-self: center !important;
+
+}
+
+.background-wave {
+    top: 0%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }

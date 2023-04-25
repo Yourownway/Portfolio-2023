@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import contactImage from "../assets/img/contact-img.svg"
+import pandaImage from "../assets/img/contact-panda.png"
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-bootstrap';
 export default function Contact() {
@@ -44,8 +45,9 @@ export default function Contact() {
         <section className='contact' id='connect'>
             <Container>
                 <Row className="align-items-center">
-                    <Col md={6}>
-                        <Image src={contactImage} alt="Contact Us" />
+                    <Col md={6} className='contact-images'>
+                        <Image src={contactImage} />
+                        <Image src={pandaImage} alt="Contact Us" />
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>

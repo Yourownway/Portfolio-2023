@@ -1,0 +1,10 @@
+.text-left {
+    text-align: left !important;
+}
+
+br{
+    content: "";
+    display: block;
+    padding-top: 4px !important
+}
+

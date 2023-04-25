@@ -6,6 +6,8 @@ import colorSharp2 from "../assets/img/color-sharp2.png"
 import projectImg1 from "../assets/img/project-img1.png"
 import projectImg2 from "../assets/img/project-img2.png"
 import projectImg3 from "../assets/img/project-img3.png"
+import TimeLine from './timeLine/TimeLine'
+import wave from "../assets/img/wave.svg"
 
 export default function Projects() {
 
@@ -64,19 +66,20 @@ export default function Projects() {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
+                        <h2>About Me</h2>
                         <p>Lorem ipsum is simply dummy text of the printing</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className='nav-pills mb-5 justify-content-center align-items-center' id="pills-tab" >
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                    <Nav.Link eventKey="first">Projects</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                    <Nav.Link eventKey="second">Training </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">
-                                        Tab Three
+                                        
+Professional 
                                     </Nav.Link>
                                 </Nav.Item>
                             </Nav>
@@ -90,12 +93,20 @@ export default function Projects() {
                                         }
                                     </Row>
                                 </Tab.Pane>
+                                <Tab.Content>
+                                <Tab.Pane eventKey="second">
+                                <Row>
+                                    <TimeLine/>
+                                </Row>
+                                </Tab.Pane>
+                                </Tab.Content>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
-            <Image className='background-image-right' src={colorSharp2} />
+         {/*    <Image className='background-image-right' src={colorSharp2} /> */}
+         <Image src={wave} className='background-wave' />
         </section>
     )
 }
