@@ -3,9 +3,10 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
+import meter1 from "../assets/img/skill-front.svg"
+import meter2 from "../assets/img/skill-backend.svg"
+import meter3 from "../assets/img/skill-design.svg"
+import meter4 from "../assets/img/skill-devops.svg"
 import colorSharp from "../assets/img/color-sharp.png"
 
 export default function Skills() {
@@ -39,20 +40,25 @@ export default function Skills() {
                                 Skills
                             </h2>
                             <p>description</p>
-                            <Carousel responsive={responsive} infinite={true} className='skill-slider'>
-                                <div className='item'><Image src={meter1} />
-                                    <h5>Web developement</h5>
+                            <Row  className='skill-items d-flex align-item-center p-10'>
+                            <Col sm={12} md={3} className='item'><Image width={20} src={meter1} />
+                                    <h5>Front end </h5>
 
-                                </div>
-                                <div className='item'><Image src={meter2} />
+                                </Col>
+                                <Col sm={12} md={3} className='item'><Image src={meter2} />
+                                    <h5>Back end</h5>
+
+                                </Col>
+                                <Col sm={12} md={3} className='item'><Image src={meter3} />
                                     <h5>Web design</h5>
 
-                                </div>
-                                <div className='item'><Image src={meter3} />
-                                    <h5>Brand identity</h5>
+                                </Col>
+                                <Col sm={12} md={3} className='item'><Image src={meter4} />
+                                    <h5>Devops</h5>
 
-                                </div>
-                            </Carousel>
+                                </Col>
+                         
+                            </Row>
                         </div>
                     </Col>
                 </Row>
