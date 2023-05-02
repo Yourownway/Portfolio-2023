@@ -3,6 +3,8 @@ import React from 'react'
 import { Col, Container, Nav, Row, Tab } from 'react-bootstrap'
 import oscillo from "../../assets/img/oscillo.svg"
 import mathLogo from "../../assets/img/math-logo.png"
+import phone from "../../assets/img/training/phone.svg"
+import code from "../../assets/img/training/code.svg"
 
 export default function TimeLine() {
   return (
@@ -42,7 +44,7 @@ export default function TimeLine() {
                     RNCP niveau II<br /> Alternance 12 mois
                     TypeScript, Architecture N-tiers, React Native
                   </p></Col>
-                  <Col className="d-flex col justify-content-center align-items-center"><span >Logo</span></Col>
+                  <Col ><Image className='timeLine-logo' src={code} /><Image className='timeLine-logo' src={phone} /></Col>
                 </Row>
               </Tab.Pane>
               <Tab.Pane eventKey="second" >
@@ -58,7 +60,7 @@ export default function TimeLine() {
                     Avancé (810/1000)
                     <br></br> Certification Agile Scrum Kanban{" "}
                   </p></Col>
-                  <Col><p>Logo</p></Col>
+                  <Col><Image className='timeLine-logo' src={code} /><Image className='timeLine-logo' src={phone} /></Col>
                 </Row>
               </Tab.Pane>
               <Tab.Pane eventKey="third" >
